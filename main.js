@@ -40,6 +40,7 @@ let mins = Math.floor(((this.targetDate - new Date()) % (1000 * 60 * 60)) / (100
 
 const timer = new CountdownTimer("#timer-1", "March 2, 2024");
 
+timer.selector.style.display = 'flex';
 timer.labels.forEach((label) => (label.style.display = "none"));
 timer.values.forEach((value) => {
   value.style.margin = "20px";
